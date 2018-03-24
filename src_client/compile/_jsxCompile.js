@@ -28283,22 +28283,26 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRedux = __webpack_require__(10);
+
 var _Tabulation = __webpack_require__(224);
 
 var _Tabulation2 = _interopRequireDefault(_Tabulation);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Navigation = function Navigation() {
+var Navigation = function Navigation(props) {
     return _react2.default.createElement(
         'nav',
         { className: 'nav-extended purple accent-3' },
         _react2.default.createElement(
             'h4',
             null,
-            _react2.default.createElement('i', { className: 'fa fa-book' }),
-            ' Collect Books! ',
-            _react2.default.createElement('i', { className: 'fa fa-book' })
+            _react2.default.createElement('i', { className: 'fa fa-book hide-on-small-only' }),
+            "   ",
+            props.username ? props.username : "Collect Books!",
+            "   ",
+            _react2.default.createElement('i', { className: 'fa fa-book hide-on-small-only' })
         ),
         _react2.default.createElement(
             'div',
@@ -28308,7 +28312,15 @@ var Navigation = function Navigation() {
     );
 };
 
-exports.default = Navigation;
+function mapStateToProps(_ref) {
+    var users = _ref.users;
+
+    return {
+        username: users.username
+    };
+}
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, null)(Navigation);
 
 /***/ }),
 /* 224 */
@@ -33766,7 +33778,7 @@ var Settings = function (_React$Component) {
                             _react2.default.createElement(
                                 'a',
                                 { id: 'email-clickee', onClick: this.handleClick },
-                                'change'
+                                'Change'
                             )
                         ),
                         _react2.default.createElement(
@@ -33779,7 +33791,7 @@ var Settings = function (_React$Component) {
                             _react2.default.createElement(
                                 'a',
                                 { id: 'location-clickee', onClick: this.handleClick },
-                                'change'
+                                'Change'
                             )
                         ),
                         _react2.default.createElement(
@@ -34346,9 +34358,9 @@ var PasswordBody = function (_React$Component) {
                         inputs[elements[i].id] = elements[i].value;
                     }
 
-                    _this2.props.updateUserInformation(_this2.props.username, 'password', inputs);
-
                     $("#modalChange").modal("close");
+
+                    _this2.props.updateUserInformation(_this2.props.username, 'password', inputs);
                 }
             });
 

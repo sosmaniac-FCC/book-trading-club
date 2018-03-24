@@ -101,10 +101,10 @@ class Settings extends React.Component {
                     { this.props.reason ? <Alert message={this.props.reason}/> : null }
                     <div className="col s12 center">
                         <p>{cache.email}{'  '}
-                            <a id="email-clickee" onClick={this.handleClick}>change</a>
+                            <a id="email-clickee" onClick={this.handleClick}>Change</a>
                         </p>
                         <p>{cache.city}, {cache.state}{'  '} 
-                            <a id="location-clickee" onClick={this.handleClick}>change</a>
+                            <a id="location-clickee" onClick={this.handleClick}>Change</a>
                         </p>
                         <button className="waves-effect waves-light btn purple lighten-3 remove-button-padding">
                             <a className="white-text add-button-padding" id="password-clickee" onClick={this.handleClick}>Change Password</a>

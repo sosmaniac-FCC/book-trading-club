@@ -40,7 +40,7 @@ a {
 /************* HEADER **************/
 /***********************************/
 header {
-  margin-bottom: 25px; }
+  margin: 10px 0 1% 0 !important; }
 
 header nav {
   background: linear-gradient(#9c27b0, #ea80fc 60%);

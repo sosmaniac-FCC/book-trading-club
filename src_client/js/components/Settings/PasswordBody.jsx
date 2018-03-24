@@ -31,9 +31,9 @@ class PasswordBody extends React.Component {
                     inputs[elements[i].id] = elements[i].value;
                 }
                 
-                this.props.updateUserInformation(this.props.username, 'password', inputs);
-                
                 $("#modalChange").modal("close");
+                
+                this.props.updateUserInformation(this.props.username, 'password', inputs);
             }
         });
         
