@@ -32506,14 +32506,14 @@ var Main = function (_React$Component) {
                                 { className: "center" },
                                 _react2.default.createElement(
                                     "i",
-                                    { className: "material-icons" },
+                                    { className: "material-icons black purple-text text-accent-1" },
                                     "account_box"
                                 )
                             ),
                             _react2.default.createElement(
                                 "h3",
                                 { className: "flow-text center" },
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                "Login to access account settings and modify account credentials including user password. Also access a number of other app-related features available only to authenticated users. Login/sign-up by clicking above."
                             )
                         )
                     ),
@@ -32528,14 +32528,14 @@ var Main = function (_React$Component) {
                                 { className: "center" },
                                 _react2.default.createElement(
                                     "i",
-                                    { className: "material-icons" },
+                                    { className: "material-icons black purple-text text-accent-2" },
                                     "language"
                                 )
                             ),
                             _react2.default.createElement(
                                 "h3",
                                 { className: "flow-text center" },
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                "Interact with other users all across the app utilizing integrated book trading. Books are traded on a one-for-one basis. Any book that has not already been added to the app can be added by any authenticated user by searching the name of the title."
                             )
                         )
                     ),
@@ -32550,14 +32550,14 @@ var Main = function (_React$Component) {
                                 { className: "center" },
                                 _react2.default.createElement(
                                     "i",
-                                    { className: "material-icons" },
-                                    "chat"
+                                    { className: "material-icons black purple-text text-accent-3" },
+                                    "book"
                                 )
                             ),
                             _react2.default.createElement(
                                 "h3",
                                 { className: "flow-text center" },
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                "Book titles are supplied by Google's digitalized book library. Books are added to this app exclusively by the users. They can then be viewed and trade requested by all other authenticated users. Book entries are unique to the app once added."
                             )
                         )
                     )
