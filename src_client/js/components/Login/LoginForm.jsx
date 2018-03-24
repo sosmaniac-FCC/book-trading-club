@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const LoginForm = (props) => (
-    <form className="col s10 m4 offset-s1 offset-m4" onSubmit={props.handleLogin}>
+    <form className="col s10 m6 l4 offset-s1 offset-m3 offset-l4" onSubmit={props.handleLogin}>
         <div className="row">
             <div className="input-field col s10 m10 offset-s1 offset-m1">
                 <input type="text" name="username" id="username" className="validate" required/>
