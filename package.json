@@ -9,22 +9,93 @@
   },
   "homepage": "https://book-trading-club-sosmaniac.c9users.io",
   "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "auto": "nodemon",
     "start": "node server.js"
   },
   "author": "John Simmons",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.17.1",
+    "babel-runtime": "^6.26.0",
+    "bcryptjs": "^2.4.3",
     "bluebird": "^3.5.1",
-    "express": "^4.12.4",
-    "express-session": "^1.11.3",
-    "express-validators": "^1.0.4",
-    "mongoose": "^4.1.0",
-    "passport": "^0.3.2",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^4.13.11",
+    "morgan": "^1.9.0",
+    "node-fetch": "^2.1.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1",
     "passport-local": "^1.0.0",
     "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "axios": "^0.17.1",
+    "axios-mock-adapter": "^1.13.1",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.2.2",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^22.3.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.17.1",
+    "react": "^16.2.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "sass",
+      "scss",
+      "css",
+      "json",
+      "woff",
+      "woff2",
+      "node"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.c9/"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)spec)\\.jsx?$",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
 }

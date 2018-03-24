@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login screen loads as expected. 1`] = `
+<div>
+  <h1>
+    Login with one's account information
+  </h1>
+</div>
+`;

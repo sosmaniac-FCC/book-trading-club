@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Copyright section below the router content loads as expected. 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="left"
+      >
+        <h5
+          className="white-text flow-text"
+        >
+          Book Trading Club
+        </h5>
+        <a
+          className="grey-text text-lighten-3"
+        >
+          Collect & trade books
+        </a>
+      </div>
+      <div
+        className="right"
+      >
+        <h5
+          className="white-text flow-text"
+        >
+          FreeCodeCamp 
+          <i
+            className="fa fa-free-code-camp fa-1x"
+          />
+        </h5>
+        <a
+          className="green-text text-darken-3 right"
+          href="https://www.freecodecamp.org/sosmaniac-fcc"
+          target="_blank"
+        >
+          @sosmaniac-FCC
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="footer-copyright purple accent-3"
+  >
+    <div
+      className="container"
+    >
+      <a
+        className="black-text left"
+      >
+        Styled with Materialize
+      </a>
+      <a
+        className="black-text right"
+      >
+        Coded by John Simmons
+      </a>
+    </div>
+  </div>
+</div>
+`;

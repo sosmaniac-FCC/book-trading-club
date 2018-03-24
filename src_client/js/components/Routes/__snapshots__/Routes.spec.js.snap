@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch component container holding all applicable routes loads as expected. 1`] = `
+<Switch>
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/Login"
+  />
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/Login/CreateAccount"
+  />
+  <Route
+    component={null}
+    exact={true}
+    path="/User/:user/Profile"
+  />
+  <Route
+    component={null}
+    exact={true}
+    path="/User/:user/Trades"
+  />
+  <Route
+    component={null}
+    exact={true}
+    path="/User/:user/Books"
+  />
+  <Route
+    component={null}
+    exact={true}
+    path="/Trade/:id/Out"
+  />
+  <Route
+    component={null}
+    exact={true}
+    path="/Trade/:id/In"
+  />
+  <Route
+    component={null}
+    exact={true}
+    path="/Book/:id"
+  />
+  <Route
+    component={null}
+    exact={true}
+    path="/Book/BookSpread"
+  />
+  <Route
+    component={[Function]}
+  />
+</Switch>
+`;

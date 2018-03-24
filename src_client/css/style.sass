@@ -1,0 +1,314 @@
+// HEADER, MAIN, & FOOTER ALL-IN-ONE //
+
+/***********************************/
+/************** ALL ****************/
+/***********************************/
+
+body
+  margin: 1% 0
+
+
+body .container
+  width: 100%
+
+.box-suspend
+  display: flex
+  transition: opacity 0.25s ease
+  background-color: ghostwhite
+  border-radius: 5px
+  border: solid black 1px
+  padding: 10px
+  color: black
+  position: absolute
+  pointer-events: none
+  justify-content: center
+  align-items: center
+  width: 200px
+  opacity: 0.0
+  z-index: 1
+  left: 0
+  top: 0
+  
+.add-button-padding
+  padding: 0 15px 0 15px
+  
+.remove-button-padding
+  padding: 0 0 0 0
+  
+a
+  display: block
+  height: 100%
+  width: 100%
+
+/***********************************/
+/************* HEADER **************/
+/***********************************/
+
+header
+  margin-bottom: 25px
+
+header nav
+  background: linear-gradient(#9c27b0, #ea80fc 60%)
+  box-shadow: 0 0 5px black
+  border-radius: 10px 10px 0 0
+  border: 1px solid black
+  padding-top: 20px
+  
+  h4
+    display: block
+    text-align: center
+    margin: 0
+    
+    p
+      margin: 0 3%
+      
+    i:nth-child(2)
+      transform: scaleX(-1)
+      
+  .nav-content
+    box-shadow: inset 0px -23px 30px -25px rgba(0,0,0,0.75)
+    
+    ul li
+      transition: background-color 0.75s ease
+    
+      &:hover
+        background-color: saturate(#ea80fc, 100%)
+    
+    
+/***********************************/
+/************* ROUTES **************/
+/***********************************/
+
+#not-found
+  
+  h1
+    margin-top: 100px
+    margin-bottom: 100px
+
+
+#new-trade
+
+  .hover-cursor
+  
+    &:hover
+      background-color: ghostwhite
+  
+    img
+      border-bottom: solid black 1px
+  
+    .card-content
+      height: 25px
+      
+    .card-content > div
+      margin-top: -20px
+  
+    @media screen and (min-width: 992px)
+      img 
+        height: 150px
+      
+    @media screen and (max-width: 992px) and (min-width: 600px) 
+      img
+        height: 175px
+        
+    @media screen and (max-width: 600px) 
+      img
+        height: 200px
+
+
+#trade
+
+  #pair-compare
+    img
+      border-top: solid black 1px
+      border-bottom: solid black 1px
+  
+    @media screen and (min-width: 992px)
+      img 
+        height: 400px
+      
+    @media screen and (max-width: 992px) and (min-width: 600px) 
+      img
+        height: 350px
+        
+    @media screen and (max-width: 600px) 
+      img
+        height: 250px
+
+#trades
+  
+  table tbody
+    cursor: pointer
+    height: 100%
+    
+    tr
+      height: 100%
+    
+      td
+        height: 100%
+
+
+#settings
+
+  #logout-clickee, #email-clickee, #location-clickee
+    cursor: pointer
+    font-size: 10px
+    
+    &:hover
+      text-decoration: underline
+      
+  #modalChange
+    
+    .modal-footer
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+  
+  
+#main section
+  margin-top: -1.5%
+  
+  h2
+    font-size: 48px
+    
+    
+#book-spread
+
+  section > div
+  
+    h6:nth-child(3)
+      margin-bottom: 0
+  
+  .hover-cursor
+    position: relative
+    z-index: -1
+      
+    &:hover
+      background-color: ghostwhite
+        
+    img
+      border-bottom: solid black 1px
+      
+    .card-content
+      height: 100px
+      
+    .card-content > div
+      margin: -10px 0
+      
+    @media screen and (min-width: 992px)
+      img 
+        height: 100px
+      
+    @media screen and (max-width: 992px) and (min-width: 600px) 
+      img
+        height: 150px
+        
+    @media screen and (max-width: 600px) 
+      img
+        height: 200px
+    
+    
+#create
+
+  #border-sides-create
+    border: solid purple 2px
+    border-top-style: none
+    border-bottom-style: none
+    
+    
+#login
+
+  form
+    border: solid purple 1px
+    border-radius: 5px
+    
+    
+#my-books
+    
+  .hover-cursor
+    position: relative
+      
+    &:hover
+      background-color: ghostwhite
+        
+    img
+      border-bottom: solid black 1px
+      
+    @media screen and (min-width: 992px)
+      img
+        height: 175px
+      
+    @media screen and (max-width: 992px) and (min-width: 600px) 
+      img
+        height: 225px
+        
+    @media screen and (max-width: 600px) 
+      img
+        height: 275px
+        
+    .card-title
+      margin: 0
+      padding: 5px
+      color: black
+      background-color: white
+      border: solid black 1px
+      border-radius: 0 5px 0 0
+      cursor: pointer
+      
+      &:hover
+        background-color: plum
+    
+    
+#new-book
+
+  nav
+    margin-bottom: 75px
+    
+  .hover-cursor
+    cursor: pointer
+    
+    &:hover
+      background-color: plum
+      outline: solid purple 1px
+      
+    img
+      border-bottom: solid black 1px
+      
+  
+/***********************************/
+/************* FOOTER **************/
+/***********************************/
+
+footer 
+  background: linear-gradient(#ea80fc, #d500f9 75%)
+  border-radius: 0 0 10px 10px
+  border: 1px solid black
+  box-shadow: 0 0 5px black
+  
+  
+footer .left
+  margin-left: 4%
+  
+  h5
+    font-weight: bold
+    
+  p
+    margin: 0
+
+
+footer .right
+  margin-right: 4%
+  
+  p
+    margin: 0
+    font-weight: bold
+    
+    
+footer .footer-copyright
+  border-radius: 0 0 10px 10px
+  margin-top: -10px
+  border-top: solid black 1px
+  
+  div
+    margin: 0 1%
+  
+  

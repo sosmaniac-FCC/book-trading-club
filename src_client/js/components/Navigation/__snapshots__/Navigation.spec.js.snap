@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation section above the router content loads as expected. 1`] = `
+<nav
+  className="nav-extended purple accent-3"
+>
+  <h3>
+    <i
+      className="fa fa-book"
+    />
+    <a>
+      Knowledge!
+    </a>
+    <i
+      className="fa fa-book"
+    />
+  </h3>
+  <div
+    className="nav-content purple accent-1"
+  >
+    <Connect(Tabulation) />
+  </div>
+</nav>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Top-level application layout loads as expected. 1`] = `
+<div
+  className="container"
+>
+  <header
+    className="container"
+  >
+    <Navigation />
+  </header>
+  <main
+    className="container"
+  >
+    <Routes />
+  </main>
+  <footer
+    className="container page-footer purple accent-1"
+  >
+    <Copyright />
+  </footer>
+</div>
+`;

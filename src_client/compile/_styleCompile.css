@@ -1,0 +1,234 @@
+/***********************************/
+/************** ALL ****************/
+/***********************************/
+body {
+  margin: 1% 0; }
+
+body .container {
+  width: 100%; }
+
+.box-suspend {
+  display: flex;
+  transition: opacity 0.25s ease;
+  background-color: ghostwhite;
+  border-radius: 5px;
+  border: solid black 1px;
+  padding: 10px;
+  color: black;
+  position: absolute;
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  opacity: 0.0;
+  z-index: 1;
+  left: 0;
+  top: 0; }
+
+.add-button-padding {
+  padding: 0 15px 0 15px; }
+
+.remove-button-padding {
+  padding: 0 0 0 0; }
+
+a {
+  display: block;
+  height: 100%;
+  width: 100%; }
+
+/***********************************/
+/************* HEADER **************/
+/***********************************/
+header {
+  margin-bottom: 25px; }
+
+header nav {
+  background: linear-gradient(#9c27b0, #ea80fc 60%);
+  box-shadow: 0 0 5px black;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid black;
+  padding-top: 20px; }
+  header nav h4 {
+    display: block;
+    text-align: center;
+    margin: 0; }
+    header nav h4 p {
+      margin: 0 3%; }
+    header nav h4 i:nth-child(2) {
+      transform: scaleX(-1); }
+  header nav .nav-content {
+    box-shadow: inset 0px -23px 30px -25px rgba(0, 0, 0, 0.75); }
+    header nav .nav-content ul li {
+      transition: background-color 0.75s ease; }
+      header nav .nav-content ul li:hover {
+        background-color: #ec7dff; }
+
+/***********************************/
+/************* ROUTES **************/
+/***********************************/
+#not-found h1 {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+#new-trade .hover-cursor:hover {
+  background-color: ghostwhite; }
+
+#new-trade .hover-cursor img {
+  border-bottom: solid black 1px; }
+
+#new-trade .hover-cursor .card-content {
+  height: 25px; }
+
+#new-trade .hover-cursor .card-content > div {
+  margin-top: -20px; }
+
+@media screen and (min-width: 992px) {
+  #new-trade .hover-cursor img {
+    height: 150px; } }
+
+@media screen and (max-width: 992px) and (min-width: 600px) {
+  #new-trade .hover-cursor img {
+    height: 175px; } }
+
+@media screen and (max-width: 600px) {
+  #new-trade .hover-cursor img {
+    height: 200px; } }
+
+#trade #pair-compare img {
+  border-top: solid black 1px;
+  border-bottom: solid black 1px; }
+
+@media screen and (min-width: 992px) {
+  #trade #pair-compare img {
+    height: 400px; } }
+
+@media screen and (max-width: 992px) and (min-width: 600px) {
+  #trade #pair-compare img {
+    height: 350px; } }
+
+@media screen and (max-width: 600px) {
+  #trade #pair-compare img {
+    height: 250px; } }
+
+#trades table tbody {
+  cursor: pointer;
+  height: 100%; }
+  #trades table tbody tr {
+    height: 100%; }
+    #trades table tbody tr td {
+      height: 100%; }
+
+#settings #logout-clickee, #settings #email-clickee, #settings #location-clickee {
+  cursor: pointer;
+  font-size: 10px; }
+  #settings #logout-clickee:hover, #settings #email-clickee:hover, #settings #location-clickee:hover {
+    text-decoration: underline; }
+
+#settings #modalChange .modal-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+#main section {
+  margin-top: -1.5%; }
+  #main section h2 {
+    font-size: 48px; }
+
+#book-spread section > div h6:nth-child(3) {
+  margin-bottom: 0; }
+
+#book-spread .hover-cursor {
+  position: relative;
+  z-index: -1; }
+  #book-spread .hover-cursor:hover {
+    background-color: ghostwhite; }
+  #book-spread .hover-cursor img {
+    border-bottom: solid black 1px; }
+  #book-spread .hover-cursor .card-content {
+    height: 100px; }
+  #book-spread .hover-cursor .card-content > div {
+    margin: -10px 0; }
+  @media screen and (min-width: 992px) {
+    #book-spread .hover-cursor img {
+      height: 100px; } }
+  @media screen and (max-width: 992px) and (min-width: 600px) {
+    #book-spread .hover-cursor img {
+      height: 150px; } }
+  @media screen and (max-width: 600px) {
+    #book-spread .hover-cursor img {
+      height: 200px; } }
+
+#create #border-sides-create {
+  border: solid purple 2px;
+  border-top-style: none;
+  border-bottom-style: none; }
+
+#login form {
+  border: solid purple 1px;
+  border-radius: 5px; }
+
+#my-books .hover-cursor {
+  position: relative; }
+  #my-books .hover-cursor:hover {
+    background-color: ghostwhite; }
+  #my-books .hover-cursor img {
+    border-bottom: solid black 1px; }
+  @media screen and (min-width: 992px) {
+    #my-books .hover-cursor img {
+      height: 175px; } }
+  @media screen and (max-width: 992px) and (min-width: 600px) {
+    #my-books .hover-cursor img {
+      height: 225px; } }
+  @media screen and (max-width: 600px) {
+    #my-books .hover-cursor img {
+      height: 275px; } }
+  #my-books .hover-cursor .card-title {
+    margin: 0;
+    padding: 5px;
+    color: black;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 0 5px 0 0;
+    cursor: pointer; }
+    #my-books .hover-cursor .card-title:hover {
+      background-color: plum; }
+
+#new-book nav {
+  margin-bottom: 75px; }
+
+#new-book .hover-cursor {
+  cursor: pointer; }
+  #new-book .hover-cursor:hover {
+    background-color: plum;
+    outline: solid purple 1px; }
+  #new-book .hover-cursor img {
+    border-bottom: solid black 1px; }
+
+/***********************************/
+/************* FOOTER **************/
+/***********************************/
+footer {
+  background: linear-gradient(#ea80fc, #d500f9 75%);
+  border-radius: 0 0 10px 10px;
+  border: 1px solid black;
+  box-shadow: 0 0 5px black; }
+
+footer .left {
+  margin-left: 4%; }
+  footer .left h5 {
+    font-weight: bold; }
+  footer .left p {
+    margin: 0; }
+
+footer .right {
+  margin-right: 4%; }
+  footer .right p {
+    margin: 0;
+    font-weight: bold; }
+
+footer .footer-copyright {
+  border-radius: 0 0 10px 10px;
+  margin-top: -10px;
+  border-top: solid black 1px; }
+  footer .footer-copyright div {
+    margin: 0 1%; }
